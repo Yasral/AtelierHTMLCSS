@@ -12,3 +12,15 @@ ul{
 a{
     text-decoration: none;
 }
+
+/* Styling the reusable parts */
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.625rem 0;
+}
+
+header, nav, ul, .btn, div.other{
+    display: flex;
+}
