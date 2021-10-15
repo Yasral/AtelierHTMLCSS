@@ -59,11 +59,11 @@ div .corps{
 } 
 
 form{
-    min-width: 200px;
+    min-width: 600px;
     border-radius: 10px;
     background-color: white;
     margin-right: 950px;   
-    margin-left: 200px;
+    margin-left: 70px;
     margin-top: -200px;
 }
 form h1{
