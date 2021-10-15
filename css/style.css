@@ -1,0 +1,264 @@
+/* fonts  */
+@font-face {
+    font-family:"Roboto-regular";
+    src:url(../font/Roboto-Regular.ttf)
+}
+@font-face {
+    font-family:"Roboto-light";
+    src:url(../font/Roboto-light.ttf)
+}
+@font-face {
+    font-family:"Roboto-bold";
+    src:url(../font/Roboto-bold.ttf)
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+header{
+    width: 85%;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px dotted blue;
+}
+.logo{
+    width: 170px;
+    height: auto;
+    float: left;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+header nav{
+    margin-top: 20px;
+    float: right;
+}
+header nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+nav ul li a:hover{
+    background:#034F89;
+    color: #ffffff;
+    transition: 0.1s;
+}
+
+.clear-fix{
+    clear: both;
+}
+.connexion{
+    position: relative;
+    width: 98%;
+    background-image: url(../img/developer.png);
+    background-color:#034F89;
+    background-position: bottom 25% right 25% ;
+    background-size: 25rem 25rem;
+    background-repeat: no-repeat;
+    margin: 4vh auto 0 auto;
+    border-radius: 4px;
+}
+.connexion-title{
+    position: relative;
+    background: #EE752C;
+    padding: 4vh auto;
+    height: 10vh;
+    border-radius: 4px;
+
+}
+.connexion-title h1{
+    width: 40%;
+    float: right;
+    padding-top: 1em;
+    color: #fff;
+}
+.connexion-body{
+    
+    min-height: 70vh;
+}
+.connexion-body-right{
+position: absolute;
+left: 5%;
+bottom: 1%;
+border:1px dotted white;
+width: 40vw;
+height: 75vh;
+font-family: "Roboto-Regular";
+background-color: #ffffff;
+border-radius: 4px;
+text-align:center;
+padding: 2em;
+}
+.form-title{
+    margin-bottom: 50px;
+}
+.form-title h2{
+    color: #034F89;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.form-body {
+    text-align: left;
+}
+.form-body label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #999999;
+}
+
+input#email, input#password{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    padding: 13px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline:none;
+    border: 1px solid  #2f77ad;
+    color: #999999;
+
+}
+input#sign-in{
+    display: block;
+    background: #2f77ad;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 13px 25px;
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    transition: 0.3S;
+}
+input#sign-in:hover{
+    box-shadow: 1px 1px 5px #000;
+}
+input#email:focus, input#password:focus{
+    outline:2px solid #034F89;
+}
+.other-option{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.form-bottom{
+    text-align: center;
+}
+.form-bottom p{
+    font-size: 16px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sm-icon{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    transition: 0.4s;
+}
+.sm-icon img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-toogle{
+    display: none;
+}
+p#sign-up a {
+    color: #2f77ad;
+}
+p#sign-up{
+    font-weight: lighter;
+}
+p#sign-up a {
+    color: #2f77ad;
+    transition: 0.3s;
+}
+p#sign-up a:hover {
+    color:#EE752C;
+}
+
+@media(max-width: 1020px){
+    .menu-toogle{
+        width: 50px;
+        height: 50px;
+        border:1px dotted aqua;
+        float: right;
+        margin: 20px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color: #034F89;
+        transition: 0.2s;
+    }
+    .menu-toogle:hover {
+        background-color:#034F89;
+        color:#fff;
+    }
+    header nav{
+    width: 100%;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+    .connexion-body-right{
+        position: absolute;
+        left: 10%;
+        bottom: 1%;
+        border:1px dotted white;
+        width: 80vw;
+        height: 70vh;
+        text-align:center;
+        padding: 2em;
+        }
+        input#email, input#password{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            margin-top: 10px;
+            padding: 20px;
+            font-size: 13px;
+        }
+        /*Connexion Title*/
+        .connexion-title h1{
+            width: 100%;
+            float: none;
+            text-align: center;
+            color: #fff;
+        }
+        
+}
