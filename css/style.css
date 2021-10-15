@@ -24,3 +24,30 @@ a{
 header, nav, ul, .btn, div.other{
     display: flex;
 }
+
+header{
+    border-top: 2px solid #EDEDED;
+    border-right: 2px solid #EDEDED;
+    justify-content: flex-end;
+    padding: 0 0 50px 0;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 20%;
+}
+
+nav{
+    width: 70%;
+    
+}
+
+nav a{
+    color: #000;
+}
+
+nav ul{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
