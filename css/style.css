@@ -51,3 +51,86 @@ nav ul{
     align-items: center;
     justify-content: space-around;
 }
+
+/* Styling the main part */
+section{
+    padding: 0.625rem 0 2.8125rem 0;  /*Gonna see*/
+    background-color: #EE752C;
+}
+
+section h3{
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.banneroverlay{
+    background-color: #034F89;
+}
+
+form{   
+    padding: 3.125rem 6.25rem;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h4{
+    color: #8CABBC;
+}
+
+h4, h4 + p, form p:last-child{
+    text-align: center;
+}
+
+h4 + p{
+    padding: 1.25rem 0;
+}
+
+input:not(input[type = "checkbox"]){
+    display: block;
+    width: 100%;
+    padding: 2%;
+    margin: 1.25rem 0 0 0;
+}
+
+a[title="connexion"]{
+    display: block;
+    padding: 0 0 0 0.625rem;
+}
+
+button{
+    border: none;
+    color: #fff;
+    background-color: #388FD3;
+    padding: 0.9375rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn{
+    justify-content: flex-end;
+}
+
+.btn + p{
+    padding: 0.9375rem 0 1.875rem 0;
+    text-align: center;
+}
+
+p + ul {
+    justify-content: center;
+    padding: 0 0 1.5625rem 0;
+}
+
+p + ul li:nth-child(2){
+    margin: 0 1.5625rem;
+}
+
+div.other{
+    padding: 25px 0 0 0;
+    justify-content: center;
+}
+
+div.other img{
+    width: 40%;
+}
