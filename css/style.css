@@ -12,11 +12,10 @@ ul{
 a{
     text-decoration: none;
 }
-
 /* Styling the reusable parts */
 .wrapper{
     width: 100%;
-    max-width: 1400px;
+    max-width: 1750px;
     margin: 0 auto;
     padding: 0.625rem 0;
 }
@@ -25,20 +24,22 @@ header, nav, ul, .btn, div.other{
     display: flex;
 }
 
+/* Styling the header */
 header{
     border-top: 2px solid #EDEDED;
     border-right: 2px solid #EDEDED;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     padding: 0 0 50px 0;
     flex-wrap: wrap;
 }
 
 header img{
     width: 20%;
+    padding-left: 2.25rem;
 }
 
 nav{
-    width: 70%;
+    width: 45%;
     
 }
 
@@ -62,6 +63,7 @@ section h3{
     color: #fff;
     text-transform: capitalize;
     text-align: center;
+    padding: 1.25rem 0 0 0;
 }
 
 .banneroverlay{
@@ -90,13 +92,14 @@ h4 + p{
 input:not(input[type = "checkbox"]){
     display: block;
     width: 100%;
-    padding: 2%;
+    padding: 5%;
     margin: 1.25rem 0 0 0;
 }
 
 a[title="connexion"]{
     display: block;
     padding: 0 0 0 0.625rem;
+    margin-left: 0.625rem;
 }
 
 button{
@@ -133,4 +136,64 @@ div.other{
 
 div.other img{
     width: 40%;
+}
+
+/* Targeting the screens greater or equal to 900px */
+@media screen and (min-width: 900px){
+
+    /* Styling the reusable parts */
+    section, .banneroverlay{
+        display: flex;
+    }
+
+    section{
+        justify-content: flex-end;
+    }
+
+    /* Styling the header */
+    header{
+        justify-content: space-between
+    }
+
+    nav{
+        padding-right: 5.25rem;
+    }
+    /* Styling the main part */
+    section{
+        padding: 0.625rem 0 4.8125rem 0;  /*Gonna see*/
+        background-color: #EE752C;
+    }
+
+    section h3{
+        width: 30%;
+        text-align: left;
+    }
+
+    /* Styling the banner and banneroverlay */
+    .banneroverlay{
+        padding: 0 5.125rem;
+    }
+
+    form{
+        padding: 5.125rem 2.25rem; 
+        width: 70%;  
+        position: relative;
+        bottom: 3.4375rem;
+    }
+
+    input:not(input[type = "checkbox"]){
+        padding: 2%;
+    }
+
+    div.other{
+        align-items: center; 
+    }
+
+    div.other img{
+        width: 60%;
+        border-top: 1px solid #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+        padding: 1.25rem 0;
+        /* align-self: center; */
+    }
 }
