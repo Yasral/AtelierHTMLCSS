@@ -91,6 +91,7 @@ form .inputs input[type="email"], input[type="password"]{
     margin-left: 20px;
     margin-right: 20px;
     outline: black;
+    height: 40px;
 }
 form .inputs .mail{
     margin-left: -25px;
@@ -117,7 +118,8 @@ form button{
     background-color: rgb(108, 108, 226);
     color: white;
     margin-right: 950px;    
-    margin-left: 300px;  
+    margin-left: 450px;
+    cursor: pointer;  
 }
 img .photos{
     position: absolute;
