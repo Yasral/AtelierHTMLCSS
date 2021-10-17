@@ -34,7 +34,7 @@ header{
 }
 
 header img{
-    width: 20%;
+    width: 15%;
     padding-left: 1.25rem;
 }
 
@@ -325,6 +325,77 @@ h3 span{
 
 } */
 
+/* Styling the result page */
+
+/* .result_banner{
+    height: 50rem;
+    background: url(../images/our_neighborhood.svg) center no-repeat;
+} */
+
+
+.result_banner, .result_footer{
+    display: flex;
+    justify-content: center;
+    /* background: url(../images/doctor.svg) center no-repeat;
+    height: 50rem; */
+}
+
+.result_banner img, .result_footer img{
+    width: 35%;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*background: url(../images/our_neighborhood.svg) center no-repeat; */
+    width: 80%;
+    /* height: 60rem; */
+    padding: 1.25rem 2.5rem;
+    margin: 0 auto;
+    background-color: rgba(108, 121, 176, 0.1);
+    border-radius: 1.25rem;
+}
+
+.results > p:nth-child(1){
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(48, 219, 20, 0.9);
+    text-align: center;
+    border-radius: 0.625rem;
+}
+
+.results > p:nth-child(1) + p, .sms, .links p{
+    font-weight: bold;
+    padding: 2.5rem 0;
+}
+
+.advices{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.advices li, .links li{
+    padding: 1.25rem 0;
+}
+
+.advices span{
+    font-weight: bold;
+}
+
+.links li a{
+    text-decoration: underline;
+}
+
 
 /* Targeting the screens greater or equal to 900px */
 @media screen and (min-width: 900px){
@@ -449,4 +520,24 @@ h3 span{
     .content-max form{
         display: flex;
     }
+
+    /* Styling the results page */
+    .result_check{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .results{
+        flex-shrink: 1.25;
+        
+    }
+
+    .result_banner, .result_footer{
+        flex-shrink: 2;
+    }
+
+    .result_banner img, .result_footer img{
+        width: 100%;
+    }
+
 }
